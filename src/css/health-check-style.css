@@ -1,0 +1,51 @@
+body {
+    margin: 0 10px;
+}
+
+h1, h3 {
+    margin-top: 10px;
+}
+
+#link-container a:nth-child(n+2) {
+    margin-left: 8px;
+}
+
+/* About this software modal */
+#about tr > th:first-child {
+    text-align: right;
+    padding-right: 8px;
+}
+#about tr > th:first-child::after {
+    content: ":";
+}
+
+#title > a,
+#title > a:hover {
+    color: #000;
+    text-decoration: none;
+}
+
+form select + button {
+    margin-left: 10px;
+}
+
+/* Test results container */
+#results {
+    margin-bottom: 10px;
+}
+
+.test-result.pass {
+    color: #00a915;
+}
+
+.test-result.fail {
+    background-color: #e7003b;
+}
+
+.test-result.pending {
+    background-color: #fffe5e;
+}
+
+.test-result.skip {
+    background-color: #ffb0eb;
+}

@@ -1,0 +1,9 @@
+<form role="form">
+    <h3>Environment to test</h3>
+    {{view "select" content=content
+    optionValuePath="content.id"
+    optionLabelPath="content.name"
+    value=selectedEnvironmentName}}
+    <button {{action "run"}} type="submit" class="btn btn-primary">Run health check</button>
+</form>
+{{partial "environmentDetails"}}

@@ -1,0 +1,27 @@
+<h3>Results for "{{environmentName}}" environment</h3>
+{{#each sites}}
+    <h4>Site: {{name}}</h4>
+    <h4>{{getTotals testGroups}}</h4>
+    {{#each testGroups}}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th colspan="2">{{name}}</th>
+                </tr>
+                <tr>
+                    <th>Test Name</th>
+                    <th>Result</th>
+                </tr>
+            </thead>
+            <tbody>
+            {{#each testResults}}
+                <tr>
+                    <td>{{this.testName}}</td>
+                    <td class="test-result {{getTestResultClass this.testResult}}">{{getTestResultIcon this.testResult}} {{getTestResultText this.testResult}}</td>
+                </tr>
+            {{/each}}
+            </tbody>
+        </table>
+        {{#if log}}<pre>{{log}}</pre>{{/if}}
+    {{/each}}
+{{/each}}

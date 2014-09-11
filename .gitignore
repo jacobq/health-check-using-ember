@@ -1,0 +1,16 @@
+# IDE / project files
+.idea
+node_modules
+bower_components
+
+# System files
+Thumbs.db
+desktop.ini
+.DS_Store
+._.*
+*~
+
+# Temp / debugging output
+v8.log
+.npm-debug.log
+dist
